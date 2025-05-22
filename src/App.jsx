@@ -1,10 +1,11 @@
-import Home from "./components/Home";
-
+import Header from "./components/header/Header";
 function App() {
   return (
-  <>
-  <Home/>
-  </>);
+    <>
+      <Header />
+      <div className="h-[200vh]"></div>
+    </>
+  );
 }
 
 export default App;

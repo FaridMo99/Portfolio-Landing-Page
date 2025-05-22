@@ -1,1 +1,23 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
+
+.frost {
+  @apply bg-secondary/60 backdrop-blur-md border-white/10 shadow-md;
+  background: rgba(232, 23, 93, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  position: fixed;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.frost::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(36, 36, 36, 0.243) 40%, rgba(36, 36, 36, 0.3) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
