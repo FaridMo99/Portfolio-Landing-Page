@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 
 function NavbarModal({ links }) {
   return (
-    <div className="w-screen h-screen absolute z-10 top-0 left-0 bg-black/75">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="w-screen h-screen absolute z-10 top-0 left-0 bg-black/75"
+    >
       <div className="w-3/7 h-full modalDiv absolute top-0 right-0 bg-primary text-white">
         <ul className="w-full h-full flex flex-col justify-evenly items-center">
           {links.map((link) => (
@@ -28,7 +33,7 @@ function NavbarModal({ links }) {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import { MenuIcon, X } from "lucide-react";
 import NavbarModal from "./NavbarModal";
-import {Square} from "lucide-react"
+import { Square } from "lucide-react";
+import { motion } from "framer-motion";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,19 +49,25 @@ function Header() {
   }
 
   return (
-    <header
-      className={`w-full h-[10vh] ${scroll ? "frost" : ""} fixed top-0 flex justify-around items-center`}
+    <motion.header
+      initial="closed"
+      animate={{
+        height: scroll ? "12.5vh" : "10vh",
+        padding: scroll ? "2vw" : "0",
+      }}
+      transition={{ duration: 0.2, ease: "linear" }}
+      className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed flex justify-between items-center ${scroll ? "frost" : ""} z-10`}
       onClick={clickHandler}
     >
-      <Square size={60}/>
+      <Square className="text-secondary" size={60} />
       <Icon
         size={null}
-        className="z-20 md:hidden w-[11%] h-full absolute right-3 text-white"
+        className="z-20 md:hidden w-[12%] h-full text-white"
         onClick={() => setIsOpen(!isOpen)}
       />
       <Navbar links={links} />
       {isOpen && <NavbarModal links={links} />}
-    </header>
+    </motion.header>
   );
 }
 

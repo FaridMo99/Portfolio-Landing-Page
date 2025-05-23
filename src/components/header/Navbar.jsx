@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 function Navbar({ links }) {
   return (
-    <nav className="w-1/2 h-full text-white">
-      <ul className="w-full h-full hidden md:flex justify-evenly items-center">
+    <nav className="w-1/2 h-full hidden md:block text-white">
+      <ul className="w-full h-full md:flex justify-evenly items-center">
         {links.map((link) => (
           <motion.li
             className="relative cursor-pointer"
