@@ -1,13 +1,13 @@
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import About from "./components/main/About";
+import Home from "./components/main/Home";
 
 function App() {
   return (
     <>
       <Header />
       <Main>
-        <About />
+        <Home />
       </Main>
     </>
   );

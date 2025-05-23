@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+function Home() {
   return (
     <section
       id="Home"
@@ -20,4 +20,4 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
