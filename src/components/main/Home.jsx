@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <section
-      id="Home"
+      id="home"
       className="w-full text-white h-[88vh] flex flex-col pl-12"
     >
       <h2 className="text-secondary text-xl pt-32 pb-2">Hello, my name is</h2>
