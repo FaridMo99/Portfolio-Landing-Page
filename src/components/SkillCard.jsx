@@ -14,7 +14,7 @@ function SkillCard({ title, icons, width, skills }) {
         <br />
         {title}
       </h2>
-      <div className="w-full py-4  flex flex-wrap">
+      <div className="w-full py-4 mb-2  flex flex-wrap">
         {skills?.map((skill) => (
           <CardButton key={skill} text={skill} />
         ))}
