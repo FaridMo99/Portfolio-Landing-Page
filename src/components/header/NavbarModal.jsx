@@ -2,7 +2,7 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-function NavbarModal({ links }) {
+function NavbarModal({ links, setIsOpen }) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -19,6 +19,9 @@ function NavbarModal({ links }) {
               initial="rest"
               whileHover="hover"
               animate="rest"
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               <a href={link.href}>{link.name}</a>
               <motion.span

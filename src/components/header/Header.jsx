@@ -50,13 +50,20 @@ function Header() {
 
   return (
     <motion.header
-      initial="closed"
+      initial={{ opacity: 0, y: "-10vh" }}
       animate={{
         height: scroll ? "12.5vh" : "10vh",
         padding: scroll ? "2vw" : "0",
+        opacity: 1,
+        y: 0,
       }}
-      transition={{ duration: 0.2, ease: "linear" }}
-      className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed flex justify-between items-center ${scroll ? "frost" : ""} z-10`}
+      transition={{
+        duration: 0.2,
+        ease: "linear",
+        opacity: { duration: 1 },
+        y: { duration: 1 },
+      }}
+      className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed flex justify-between items-center ${scroll ? "frost" : ""} z-50`}
       onClick={clickHandler}
     >
       <Square className="text-secondary" size={60} />
@@ -66,7 +73,7 @@ function Header() {
         onClick={() => setIsOpen(!isOpen)}
       />
       <Navbar links={links} />
-      {isOpen && <NavbarModal links={links} />}
+      {isOpen && <NavbarModal setIsOpen={setIsOpen} links={links} />}
     </motion.header>
   );
 }
