@@ -4,12 +4,15 @@ import TransitionWrapper from "./HoC/TransitionWrapper";
 
 function SkillCard({ title, icons, width, skills }) {
   return (
-    <TransitionWrapper styles={`frost ${width} h-[20vh] md:h-[25vh] rounded-2xl px-4`}>
+    <TransitionWrapper
+      styles={`frost ${width} h-[20vh] md:h-[25vh] rounded-2xl px-4`}
+    >
       <h2 className="font-bold pt-2">
         {icons?.map((Icon) => (
           <Icon key={Icon} className="inline text-secondary" />
         ))}
-        <br/>{title}
+        <br />
+        {title}
       </h2>
       <div className="w-full py-4  flex flex-wrap">
         {skills?.map((skill) => (

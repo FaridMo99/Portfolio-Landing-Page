@@ -8,7 +8,7 @@ function NavbarModal({ links, setIsOpen }) {
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="w-screen h-screen absolute z-10 top-0 left-0 bg-black/75"
+      className="w-screen h-screen fixed z-40 top-0 left-0 font-bold bg-black/75"
     >
       <div className="w-3/7 h-full modalDiv absolute top-0 right-0 bg-primary text-white">
         <ul className="w-full h-full flex flex-col justify-evenly items-center">

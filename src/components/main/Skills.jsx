@@ -16,13 +16,7 @@ function Skills() {
         <SkillCard
           width="md:w-[25vw] w-full my-12 md:my-0"
           title="Frameworks/Librarys"
-          skills={[
-            "React",
-            "NextJs",
-            "Tailwind",
-            "Vitest",
-            "Playwright"
-          ]}
+          skills={["React", "NextJs", "Tailwind", "Vitest", "Playwright"]}
           icons={[ChevronLeft, ChevronRight]}
         />
         <SkillCard

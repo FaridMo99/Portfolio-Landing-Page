@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Navbar from "./Navbar";
-import { MenuIcon, X } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import NavbarModal from "./NavbarModal";
 import { Square } from "lucide-react";
 import { motion } from "framer-motion";
@@ -15,8 +16,6 @@ function Header() {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
   ];
-
-  const Icon = isOpen ? X : MenuIcon;
 
   useEffect(() => {
     function readScroll() {
@@ -48,6 +47,14 @@ function Header() {
     }
   }
 
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  }
+
+  if (!isOpen) {
+    document.body.style.overflow = "auto";
+  }
+
   return (
     <motion.header
       initial={{ opacity: 0, y: "-10vh" }}
@@ -63,17 +70,21 @@ function Header() {
         opacity: { duration: 1 },
         y: { duration: 1 },
       }}
-      className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed flex justify-between items-center ${scroll ? "frost" : ""} z-50`}
+      className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed font-bold flex justify-between items-center ${scroll ? "frost" : ""} z-30`}
       onClick={clickHandler}
     >
       <Square className="text-secondary" size={60} />
-      <Icon
+      <MenuIcon
         size={null}
         className="z-20 md:hidden w-[12%] h-full text-white"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen(true)}
       />
       <Navbar links={links} />
-      {isOpen && <NavbarModal setIsOpen={setIsOpen} links={links} />}
+      {isOpen &&
+        createPortal(
+          <NavbarModal setIsOpen={setIsOpen} links={links} />,
+          document.getElementById("portal"),
+        )}
     </motion.header>
   );
 }

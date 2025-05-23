@@ -25,3 +25,15 @@
   opacity: 0.6;
   filter: brightness(0.7);
 }
+
+#about {
+  scroll-margin-top: 15vh;
+}
+
+#skills {
+  scroll-margin-top: 15vh;
+}
+
+#projects {
+  scroll-margin-top: 15vh;
+}
