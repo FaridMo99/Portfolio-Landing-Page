@@ -5,7 +5,12 @@ import Subsections from "../Subsections";
 function About() {
   return (
     <>
-      <Subsections title="About Me" height="screen" innerHeight="70vh">
+      <Subsections
+        title="About Me"
+        height="screen"
+        innerHeight="70vh"
+        id="about"
+      >
         <div className="frost w-1/2 h-full rounded-2xl flex justify-center items-center">
           <p className="p-6">
             Hello! My name is John, and I enjoy creating things that live on the

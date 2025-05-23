@@ -12,8 +12,8 @@ function Header() {
   const links = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Footer", href: "#footer" },
-    { name: "Lorem", href: "#lorem" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
   ];
 
   const Icon = isOpen ? X : MenuIcon;
