@@ -20,6 +20,10 @@
   border-radius: inherit; /* optional, if you want rounded corners matching the parent */
 }
 
+#home {
+  scroll-margin-top: 12vh;
+}
+
 #about {
   scroll-margin-top: 15vh;
 }
