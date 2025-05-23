@@ -2,11 +2,7 @@
 @import "tailwindcss";
 
 .frost {
-  @apply bg-secondary/60 backdrop-blur-md border-white/10 shadow-md;
-  background: rgba(232, 23, 93, 0.29);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.9px);
-  -webkit-backdrop-filter: blur(2.9px);
+  @apply bg-secondary/30 backdrop-blur-md;
   overflow: hidden;
   outline: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -17,13 +13,11 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-
-  background-image: url("../public/");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-  filter: brightness(0.7);
+  background-color: rgba(255, 255, 255, 0.1); /* lighter and more transparent */
+  backdrop-filter: blur(8px); /* add backdrop-filter here for better blur */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  filter: none; /* remove brightness and blur filter, let backdrop-filter handle it */
+  border-radius: inherit; /* optional, if you want rounded corners matching the parent */
 }
 
 #about {

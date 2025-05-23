@@ -9,15 +9,15 @@ function Projects() {
         <ProjectsCard
           title="Social-Media-Clone/SPA"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga cupiditate recusandae dolorum porro vel, eaque tempore corporis modi commodi, repudiandae mollitia quam eos corrupti iure aperiam maxime explicabo itaque."
-          image="../../../"
-          githubLink=""
+          image="../../../public/self.jpeg"
+          githubLink="" 
           technologies={["React", "React-Router", "Tailwind"]}
           width="w-full md:w-[25vw]"
         />
         <ProjectsCard
           title="Basketball-API/AI-Wrapper/SSR"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga cupiditate recusandae dolorum porro vel, eaque tempore corporis modi commodi, repudiandae mollitia quam eos corrupti iure aperiam maxime explicabo itaque."
-          image="../../../"
+          image="../../../public/self.jpeg"
           githubLink=""
           technologies={["React", "NextJs", "Tailwind"]}
           width="w-full md:w-[25vw] my-12 md:my-0"
@@ -25,7 +25,7 @@ function Projects() {
         <ProjectsCard
           title="Finance-Dashboard/SSG"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga cupiditate recusandae dolorum porro vel, eaque tempore corporis modi commodi, repudiandae mollitia quam eos corrupti iure aperiam maxime explicabo itaque."
-          image="../../../"
+          image="../../../public/self.jpeg"
           githubLink=""
           technologies={["React", "NextJs", "Tailwind"]}
           width="w-full md:w-[25vw]"
