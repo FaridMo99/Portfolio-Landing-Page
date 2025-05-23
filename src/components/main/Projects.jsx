@@ -9,7 +9,7 @@ function Projects() {
         <ProjectsCard
           title="Social-Media-Clone/SPA"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga cupiditate recusandae dolorum porro vel, eaque tempore corporis modi commodi, repudiandae mollitia quam eos corrupti iure aperiam maxime explicabo itaque."
-          image="../../../public/abstract-art-background-dark-gray-600nw-2115572723.jpg.webp"
+          image="../../../"
           githubLink=""
           technologies={["React", "React-Router", "Tailwind"]}
           width="w-full md:w-[25vw]"
@@ -17,7 +17,7 @@ function Projects() {
         <ProjectsCard
           title="Basketball-API/AI-Wrapper/SSR"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga cupiditate recusandae dolorum porro vel, eaque tempore corporis modi commodi, repudiandae mollitia quam eos corrupti iure aperiam maxime explicabo itaque."
-          image="../../../public/abstract-art-background-dark-gray-600nw-2115572723.jpg.webp"
+          image="../../../"
           githubLink=""
           technologies={["React", "NextJs", "Tailwind"]}
           width="w-full md:w-[25vw] my-12 md:my-0"
@@ -25,7 +25,7 @@ function Projects() {
         <ProjectsCard
           title="Finance-Dashboard/SSG"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga cupiditate recusandae dolorum porro vel, eaque tempore corporis modi commodi, repudiandae mollitia quam eos corrupti iure aperiam maxime explicabo itaque."
-          image="../../../public/abstract-art-background-dark-gray-600nw-2115572723.jpg.webp"
+          image="../../../"
           githubLink=""
           technologies={["React", "NextJs", "Tailwind"]}
           width="w-full md:w-[25vw]"
