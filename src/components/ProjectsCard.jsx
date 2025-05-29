@@ -38,7 +38,7 @@ function ProjectsCard({
   />
 </div>
       <h2 className="text-white pl-3 py-4 font-bold">{title}</h2>
-      <p className="pl-3 mb-4 overflow-scroll h-[20vh]">{text}</p>
+      <p className="pl-3 mb-4 overflow-hidden h-[20vh]">{text}</p>
       <div className="w-full pl-1 pb-10 flex flex-wrap">
         {technologies?.map((technologie) => (
           <CardButton key={technologie} text={technologie} />
