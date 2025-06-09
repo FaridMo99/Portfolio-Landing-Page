@@ -13,17 +13,17 @@ function Projects() {
           githubLink="https://github.com/FaridMo99/SPA"
           technologies={["React", "React-Router", "Tailwind"]}
           width="w-full md:w-[25vw]"
-          link=""
+          link="friendly.de"
           secondImage="/friendly-logo-second.png"
         />
         <ProjectsCard
-          title="Basketball-Statistics App with AI-Chatbot/SSG/ISR"
-          text="This Project is a Basketball Statistics Webapp using NextJs for SSG and ISR aswell as a AI-Chatbot to get direct information."
-          image="/self.jpeg"
+          title="HoopTracker/ Basketball Statistics with AI-Chatbot"
+          text="HoopTracker is a Basketball Statistics Webapp using NextJs for SSG and ISR."
+          image="/hooptracker-fullimage.jpg"
           githubLink="https://github.com/FaridMo99/nextjs-sportsapp"
           technologies={["React", "NextJs", "Tailwind", "ShadCN"]}
           width="w-full md:w-[25vw] my-12 md:my-0"
-          link=""
+          link="hooptracker.de"
           secondImage=""
         />
         <ProjectsCard
