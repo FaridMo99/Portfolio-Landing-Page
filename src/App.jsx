@@ -18,7 +18,7 @@ function App() {
         <Projects />
       </Main>
       <Footer />
-      <Background/>
+      <Background />
     </>
   );
 }

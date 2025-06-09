@@ -13,7 +13,7 @@ function Firefly() {
 
   return (
     <motion.div
-    className="bg-secondary/20"
+      className="bg-secondary/20"
       style={{
         position: "absolute",
         top: `${y}vh`,
@@ -22,7 +22,7 @@ function Firefly() {
         height: size,
         filter: "drop-shadow(0 0 6px rgba(255, 255, 180, 0.9))",
         opacity: 0.8,
-        pointerEvents: "none"
+        pointerEvents: "none",
       }}
       animate={{
         x: [0, randomNum(-20, 20), 0],
@@ -49,7 +49,7 @@ function Background() {
         <Firefly key={i} />
       ))}
     </div>,
-    portal
+    portal,
   );
 }
 
