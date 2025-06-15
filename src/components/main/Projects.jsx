@@ -24,7 +24,7 @@ function Projects() {
           technologies={["React", "NextJs", "Tailwind", "ShadCN"]}
           width="w-full md:w-[25vw] my-12 md:my-0"
           link="hooptracker.de"
-          secondImage=""
+          secondImage="/hooptrackerSecond.png"
         />
         <ProjectsCard
           title="Unknown/SSR"
