@@ -11,20 +11,17 @@ function ProjectsCard({
   alt,
   githubLink,
   technologies,
-  width,
   link,
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <a
-      href={link}
-      target="_blank"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <TransitionWrapper
-        styles={`${width} h-[60vh] md:h-[70vh] relative rounded-2xl frost`}
+    <TransitionWrapper styles="w-full md:w-[35vw] h-[60vh] md:h-[70vh] relative rounded-2xl mb-12 md:mb-0 frost">
+      <a
+        href={link}
+        target="_blank"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <div className="relative h-1/3 w-full bg-black">
           <img
@@ -42,8 +39,8 @@ function ProjectsCard({
             }`}
           />
         </div>
-        <h2 className="text-white pl-3 py-4 font-bold">{title}</h2>
-        <p className="pl-3 mb-4 overflow-hidden h-[20vh]">{text}</p>
+        <h2 className="text-white px-3 py-4 font-bold">{title}</h2>
+        <p className="px-3 mb-4 overflow-hidden h-[20vh]">{text}</p>
         <div className="w-full pl-1 pb-10 flex flex-wrap">
           {technologies?.map((technologie) => (
             <CardButton key={technologie} text={technologie} />
@@ -56,8 +53,8 @@ function ProjectsCard({
         >
           <FaGithub size={30} color="#000" />
         </a>
-      </TransitionWrapper>
-    </a>
+      </a>
+    </TransitionWrapper>
   );
 }
 
