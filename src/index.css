@@ -13,11 +13,11 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-color: rgba(255, 255, 255, 0.1); /* lighter and more transparent */
-  backdrop-filter: blur(8px); /* add backdrop-filter here for better blur */
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
-  filter: none; /* remove brightness and blur filter, let backdrop-filter handle it */
-  border-radius: inherit; /* optional, if you want rounded corners matching the parent */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px);
+  filter: none;
+  border-radius: inherit;
 }
 
 #home {
