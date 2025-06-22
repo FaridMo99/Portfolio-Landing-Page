@@ -3,7 +3,6 @@ import { createPortal } from "react-dom";
 import Navbar from "./Navbar";
 import { MenuIcon } from "lucide-react";
 import NavbarModal from "./NavbarModal";
-import { Square } from "lucide-react";
 import { motion } from "framer-motion";
 
 function Header() {
@@ -73,7 +72,7 @@ function Header() {
       className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed font-bold flex justify-between items-center ${scroll ? "frost" : ""} z-30`}
       onClick={clickHandler}
     >
-      <Square className="text-secondary" size={60} />
+      <img src="/LandingPage-Logo.png" className="h-24 w-auto object-contain" />
       <MenuIcon
         size={null}
         className="z-20 md:hidden w-[12%] h-full text-white"
