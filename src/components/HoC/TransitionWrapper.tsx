@@ -1,7 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
-function TransitionWrapper({ styles, children }) {
+type TransitionWrapperProps = {
+  styles: string;
+  children:ReactNode;
+}
+
+function TransitionWrapper({ styles, children }:TransitionWrapperProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}

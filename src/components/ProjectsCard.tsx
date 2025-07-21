@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import { useState} from "react";
 import { FaGithub } from "react-icons/fa";
 import CardButton from "./CardButton";
 import TransitionWrapper from "./HoC/TransitionWrapper";
+import type { Projects } from "./main/Projects";
+
+
 
 function ProjectsCard({
   title,
@@ -12,8 +15,8 @@ function ProjectsCard({
   githubLink,
   technologies,
   link,
-}) {
-  const [isHovered, setIsHovered] = useState(false);
+}: Projects) {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <TransitionWrapper styles="w-full md:w-[35vw] h-[60vh] md:h-[70vh] relative rounded-2xl mb-12 md:mb-0 frost">

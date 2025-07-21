@@ -6,8 +6,9 @@ import Skills from "./components/main/Skills";
 import Projects from "./components/main/Projects";
 import Footer from "./components/footer/Footer";
 import Background from "./components/Background";
+import type { JSX } from "react";
 
-function App() {
+function App():JSX.Element {
   return (
     <>
       <Header />

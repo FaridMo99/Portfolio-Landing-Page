@@ -1,8 +1,12 @@
-import React from "react";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import type { Link } from "./Header";
 
-function NavbarModal({ links, setIsOpen }) {
+type NavbarModalProps = {
+  links: Link[];
+  setIsOpen: (arg: boolean) =>void;
+}
+
+function NavbarModal({ links, setIsOpen }:NavbarModalProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}

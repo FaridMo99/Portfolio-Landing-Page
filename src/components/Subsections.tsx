@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
-function Subsections({ title, id, children }) {
+type SubsectionsProps = {
+  title: string;
+  id: string;
+  children:ReactNode;
+}
+
+function Subsections({ title, id, children }:SubsectionsProps) {
   return (
     <section id={id} className="w-full text-white mb-30">
       <motion.h2

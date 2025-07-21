@@ -1,4 +1,3 @@
-import React from "react";
 import Subsections from "../Subsections";
 import SkillCard from "../SkillCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -6,11 +5,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 function Skills() {
   return (
     <Subsections id="skills" title="Skills & Technologies">
-      <div className="flex md:flex-row flex-col justify-around md:justify-between items-center w-full h-full">
+      <div className="flex md:flex-row md:items-start flex-col justify-around md:justify-between items-center w-full h-full">
         <SkillCard
           width="md:w-[25vw] w-full"
           title="Languages"
-          skills={["HTML", "CSS", "Javascript"]}
+          skills={["HTML", "CSS", "JavaScript", "TypeScript"]}
           icons={[ChevronLeft, ChevronRight]}
         />
         <SkillCard

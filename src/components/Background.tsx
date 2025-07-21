@@ -1,15 +1,14 @@
-import React from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 
-const firefliesCount = 20;
+const firefliesCount:number = 20;
 
-const randomNum = (min, max) => Math.random() * (max - min) + min;
+const randomNum = (min:number, max:number):number => Math.random() * (max - min) + min;
 
 function Firefly() {
-  const size = randomNum(4, 10);
-  const x = randomNum(0, 100);
-  const y = randomNum(0, 100);
+  const size:number = randomNum(4, 10);
+  const x: number = randomNum(0, 100);
+  const y: number = randomNum(0, 100);
 
   return (
     <motion.div
@@ -39,9 +38,7 @@ function Firefly() {
 }
 
 function Background() {
-  const portal = document.getElementById("background-portal");
-
-  if (!portal) return null;
+const portal = document.getElementById("background-portal") as HTMLElement;
 
   return createPortal(
     <div className="fixed top-0 left-0 w-full h-full -z-50 bg-black overflow-hidden">
@@ -49,7 +46,7 @@ function Background() {
         <Firefly key={i} />
       ))}
     </div>,
-    portal,
+    portal
   );
 }
 

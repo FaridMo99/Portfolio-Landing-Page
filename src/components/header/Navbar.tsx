@@ -1,8 +1,7 @@
-import React from "react";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import type { Link } from "./Header";
 
-function Navbar({ links }) {
+function Navbar({ links }: {links:Link[]}) {
   return (
     <nav className="w-1/2 h-full hidden md:block text-white">
       <ul className="w-full h-full md:flex justify-evenly items-center">

@@ -1,6 +1,6 @@
-import React from "react";
+import { type ReactNode } from "react";
 
-function Main({ children }) {
+function Main({ children }:{children:ReactNode}) {
   return <main className="mt-[12vh] w-full px-12">{children}</main>;
 }
 

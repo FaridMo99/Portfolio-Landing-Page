@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 function Home() {
@@ -35,8 +34,7 @@ function Home() {
         className="text-white/40 text-xl"
       >
         I'm a self taught Frontend Developer using React to create Accessible
-        and performant Single Page Applications as well as NextJs for Multi Page
-        Applications.
+        and performant Single Page Applications as well as NextJs for Server Side Rendering and SEO.
       </motion.p>
     </section>
   );

@@ -5,11 +5,16 @@ import { MenuIcon } from "lucide-react";
 import NavbarModal from "./NavbarModal";
 import { motion } from "framer-motion";
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scroll, setScroll] = useState(false);
+export type Link = {
+  name: string;
+  href: string;
+}
 
-  const links = [
+function Header() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [scroll, setScroll] = useState<boolean>(false);
+
+  const links:Link[] = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
@@ -17,11 +22,11 @@ function Header() {
   ];
 
   useEffect(() => {
-    function readScroll() {
+    function readScroll():void {
       setScroll(window.scrollY > 20);
     }
 
-    function readResize() {
+    function readResize():void {
       if (window.innerWidth >= 768) {
         setIsOpen(false);
       }
@@ -38,9 +43,10 @@ function Header() {
     };
   }, []);
 
-  function clickHandler(e) {
+  function clickHandler(e: React.MouseEvent): void {
+    const target = e.target as HTMLElement
     if (isOpen) {
-      if (!e.target.closest(".modalDiv")) {
+      if (!target.closest(".modalDiv")) {
         setIsOpen(false);
       }
     }
@@ -74,7 +80,6 @@ function Header() {
     >
       <img src="/LandingPage-Logo.png" className="h-24 w-auto object-contain" />
       <MenuIcon
-        size={null}
         className="z-20 md:hidden w-[12%] h-full text-white"
         onClick={() => setIsOpen(true)}
       />
@@ -82,7 +87,7 @@ function Header() {
       {isOpen &&
         createPortal(
           <NavbarModal setIsOpen={setIsOpen} links={links} />,
-          document.getElementById("portal"),
+          document.getElementById("portal") as HTMLDivElement,
         )}
     </motion.header>
   );
