@@ -29,7 +29,7 @@ const projects: Projects[] = [
     image: "/hooptracker-fullimage.jpg",
     githubLink: "https://github.com/FaridMo99/nextjs-sportsapp",
     technologies: ["React", "NextJs", "Tailwind", "ShadCN"],
-    link: "https://nextjs-sportsapp.vercel.app/",
+    link: "https://nextjs-sportsapp-kukg6b0ko-famohs-projects.vercel.app",
     secondImage: "/hooptrackerSecond.png",
     alt: "Hooptracker logo",
   },
