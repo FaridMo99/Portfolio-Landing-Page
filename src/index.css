@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 .frost {
-  @apply bg-secondary/30 backdrop-blur-md;
+  @apply bg-neutral-900 backdrop-blur-md;
   overflow: hidden;
   outline: 1px solid rgba(255, 255, 255, 0.4);
 }

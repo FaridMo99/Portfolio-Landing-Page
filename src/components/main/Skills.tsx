@@ -7,21 +7,43 @@ function Skills() {
     <Subsections id="skills" title="Skills & Technologies">
       <div className="flex md:flex-row md:items-start flex-col justify-around md:justify-between items-center w-full h-full">
         <SkillCard
-          width="md:w-[25vw] w-full"
-          title="Languages"
-          skills={["HTML", "CSS", "JavaScript", "TypeScript"]}
+          width="md:w-[20vw] w-full"
+          title="Frontend"
+          skills={[
+            "React",
+            "NextJs",
+            "React-Query",
+            "Zustand",
+            "React-Router",
+            "TailwindCSS",
+            "Vite",
+            "ShadCN",
+            "Zod",
+          ]}
           icons={[ChevronLeft, ChevronRight]}
         />
         <SkillCard
-          width="md:w-[25vw] w-full my-12 md:my-0"
-          title="Frameworks/Librarys"
-          skills={["React", "NextJs", "Tailwind", "Vitest", "Playwright"]}
+          width="md:w-[20vw] w-full my-12 md:my-0"
+          title="Backend"
+          skills={[
+            "NodeJs",
+            "Express",
+            "Typescript",
+            "Auth(JWT/Session)",
+            "Redis(Cache only)",
+          ]}
           icons={[ChevronLeft, ChevronRight]}
         />
         <SkillCard
-          width="md:w-[25vw] w-full"
-          title="Tools"
-          skills={["Git", "Github", "npm", "Vite"]}
+          width="md:w-[20vw] w-full mb-12"
+          title="Database"
+          skills={["PostgreSQL", "SQL", "PrismaORM"]}
+          icons={[ChevronLeft, ChevronRight]}
+        />
+        <SkillCard
+          width="md:w-[20vw] w-full"
+          title="DevOps/Tools"
+          skills={["Docker", "Github Actions", "NGINX", "Git", "Github", "Github Actions", "Jest/Vitest"]}
           icons={[ChevronLeft, ChevronRight]}
         />
       </div>

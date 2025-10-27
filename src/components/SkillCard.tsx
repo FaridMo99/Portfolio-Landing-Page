@@ -12,7 +12,7 @@ type SkillCardProps = {
 function SkillCard({ title, icons, width, skills }:SkillCardProps) {
   return (
     <TransitionWrapper
-      styles={`frost ${width} rounded-2xl px-4 md:min-h-55`}
+      styles={`frost ${width} rounded-2xl px-4 h-70`}
     >
       <h2 className="font-bold pt-2">
         {icons?.map((Icon,index) => (

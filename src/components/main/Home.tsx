@@ -25,7 +25,7 @@ function Home() {
         animate={{ x: 0, opacity: 1 }}
         className="text-white/60 text-5xl pt-2 pb-4"
       >
-        I am a Frontend Developer.
+        I am a Fullstack Developer.
       </motion.h3>
       <motion.p
         initial={{ x: "100vw", opacity: 0 }}
@@ -33,8 +33,9 @@ function Home() {
         animate={{ x: 0, opacity: 1 }}
         className="text-white/40 text-xl"
       >
-        I'm a self taught Frontend Developer using React to create Accessible
-        and performant Single Page Applications as well as NextJs for Server Side Rendering and SEO.
+        I'm a self taught Fullstack Developer using React and NextJs on the frontend for Accessible and Responsive Web Apps.<br/>
+        On the Backend i am using NodeJs and Express as Framework to create secure RESTful APIs <br />
+        as well as PostgreSQL as the Database Layerto store Data reliably. 
       </motion.p>
     </section>
   );
