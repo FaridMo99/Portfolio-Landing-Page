@@ -28,7 +28,7 @@ const projects: Projects[] = [
       "PrismaORM",
       "Redis",
     ],
-    link: "https://friendly-rarh.onrender.com",
+    link: "https://friendly.lat",
     secondImage: "/friendly-logo-second.png",
     alt: "friendly logo",
   },
