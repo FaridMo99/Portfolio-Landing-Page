@@ -19,7 +19,7 @@ function ProjectsCard({
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
-    <TransitionWrapper styles="w-full md:w-[35vw] h-[60vh] md:h-[70vh] relative rounded-2xl mb-12 md:mb-0 frost">
+    <TransitionWrapper styles="w-full md:w-[25vw] h-200 relative rounded-2xl mb-12 md:mb-0 frost">
       <a
         href={link}
         target="_blank"
@@ -30,7 +30,7 @@ function ProjectsCard({
           <img
             src={image}
             alt={alt}
-            className={`absolute h-full w-full transition-opacity duration-500 ${
+            className={`absolute h-full  w-full transition-opacity duration-500 ${
               isHovered ? "opacity-0" : "opacity-100"
             }`}
           />
@@ -43,8 +43,8 @@ function ProjectsCard({
           />
         </div>
         <h2 className="text-white px-3 py-4 font-bold">{title}</h2>
-        <p className="px-3 mb-4 overflow-hidden h-[20vh]">{text}</p>
-        <div className="w-full pl-1 pb-10 flex flex-wrap">
+        <p className="px-3 mb-4 overflow-x-hidden overflow-y-scroll h-[20vh]">{text}</p>
+        <div className="w-full flex flex-wrap overflow-y-scroll">
           {technologies?.map((technologie) => (
             <CardButton key={technologie} text={technologie} />
           ))}

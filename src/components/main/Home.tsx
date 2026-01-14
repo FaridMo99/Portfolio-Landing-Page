@@ -35,7 +35,7 @@ function Home() {
       >
         I'm a self taught Fullstack Developer using React and NextJs on the frontend for Accessible and Responsive Web Apps.<br/>
         On the Backend i am using NodeJs and Express as Framework to create secure RESTful APIs <br />
-        as well as PostgreSQL as the Database Layerto store Data reliably. 
+        as well as PostgreSQL as the Database Layer to store Data reliably. 
       </motion.p>
     </section>
   );

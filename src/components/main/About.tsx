@@ -5,7 +5,7 @@ function About() {
   return (
     <>
       <Subsections title="About Me" id="about">
-        <div className="flex justify-center items-center w-full h-full">
+        <div className="flex justify-center items-center w-full h-full mb-8">
           <TransitionWrapper styles="frost rounded-2xl md:w-1/2 p-12">
             <p>
               Hi, I'm <strong>Farid Mohseni</strong>, a self-taught Full-stack
@@ -24,7 +24,7 @@ function About() {
               My Backend focus involves building scalable services with Node.js
               and Express. I manage persistent data using PostgreSQL (with
               Prisma ORM or SQL) and optimize read speeds with Redis caching. I
-              also handle deployment tools like Docker, NGINX, and automate
+              also handle deployment tools like Docker, and automate
               releases through CI/CD pipelines via GitHub Actions.
             </p>
 

@@ -18,7 +18,6 @@ function SkillCard({ title, icons, width, skills }:SkillCardProps) {
         {icons?.map((Icon,index) => (
           <Icon key={index} className="inline text-secondary" />
         ))}
-        <br />
         {title}
       </h2>
       <div className="w-full py-4 mb-2 flex flex-wrap">

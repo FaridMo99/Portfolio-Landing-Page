@@ -10,15 +10,13 @@ function Skills() {
           width="md:w-[20vw] w-full"
           title="Frontend"
           skills={[
-            "React",
-            "NextJs",
-            "React-Query",
+            "React / Next.js",
+            "TypeScript",
+            "Tanstack Query",
             "Zustand",
-            "React-Router",
-            "TailwindCSS",
-            "Vite",
-            "ShadCN",
-            "Zod",
+            "TailwindCSS / ShadCN",
+            "Framer Motion",
+            "Zod / React-Hook-Form",
           ]}
           icons={[ChevronLeft, ChevronRight]}
         />
@@ -26,24 +24,36 @@ function Skills() {
           width="md:w-[20vw] w-full my-12 md:my-0"
           title="Backend"
           skills={[
-            "NodeJs",
-            "Express",
-            "Typescript",
-            "Auth(JWT/Session)",
-            "Redis(Cache only)",
+            "Node.js / Express",
+            "JWT & OAuth 2.0",
+            "Socket.io (Real-time)",
+            "Stripe Integration",
+            "Passport.js",
+            "Redis (Caching)",
+            "Cloudinary / Mailjet",
           ]}
           icons={[ChevronLeft, ChevronRight]}
         />
         <SkillCard
           width="md:w-[20vw] w-full mb-12"
           title="Database"
-          skills={["PostgreSQL", "SQL", "PrismaORM"]}
+          skills={[
+            "PostgreSQL",
+            "Prisma ORM",
+            "SQL",
+          ]}
           icons={[ChevronLeft, ChevronRight]}
         />
         <SkillCard
           width="md:w-[20vw] w-full"
           title="DevOps/Tools"
-          skills={["Docker", "Github Actions", "NGINX", "Git", "Github", "Github Actions", "Jest/Vitest"]}
+          skills={[
+            "Docker",
+            "GitHub Actions (CI/CD)",
+            "Monorepo (Workspaces)",
+            "Vitest / Supertest",
+            "Git / GitHub",
+          ]}
           icons={[ChevronLeft, ChevronRight]}
         />
       </div>

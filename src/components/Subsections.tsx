@@ -9,13 +9,14 @@ type SubsectionsProps = {
 
 function Subsections({ title, id, children }:SubsectionsProps) {
   return (
-    <section id={id} className="w-full text-white mb-30">
+    <section id={id} className="w-full text-white">
       <motion.h2
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.2 }}
         viewport={{ once: true, amount: 0.7 }}
-        className="text-6xl font-bold "
+        className="text-6xl font-bold line-clamp-2"
+        title={title}
       >
         <span className="text-secondary">#</span>
         {title}
