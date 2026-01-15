@@ -14,8 +14,8 @@ export type Projects = {
 
 const projects: Projects[] = [
   {
-    title: "... | Fullstack E-Commerce-App",
-    text: `... is a Fullstack Application using NextJs on the Frontend and Express on the Backend. 
+    title: "E-Commerce-App | Fullstack E-Commerce-App",
+    text: `E-Commerce-App is a Fullstack Application using NextJs on the Frontend and Express on the Backend. 
     For end-to-end shared behavior it uses a Monorepo Architecture through npm workspaces.
     The App uses JWT-Tokens as well as OAuth for authentication.
     Public Form Inputs are bot protected through rate-limiting and Cloudflare Turnstile.
@@ -52,7 +52,7 @@ const projects: Projects[] = [
       "Github Actions",
       "Mailjet",
     ],
-    link: "",
+    link: "https://frontend-e-commerce-app.onrender.com",
     secondImage: "/eCommerceAppFullImage.png",
     alt: "e commerce app logo",
   },
