@@ -1,8 +1,10 @@
 # Farid Mohseni | Developer Portfolio
 
-Hi, I'm **Farid Mohseni**, a self-taught **frontend developer** passionate about building fast, interactive, and responsive web applications. I specialize in modern JavaScript frameworks like **React** and **Next.js**, and I'm currently expanding my skillset into **backend technologies** like **Node.js** and **PostgreSQL** to become a full-stack developer.
+Hi, I'm Farid Mohseni, a Fullstack Developer focused on developing scalable, type-safe, and high-performance web applications. My expertise lies in creating Applications that use React/Next.js at the frontend and robust Node.js/Express backends. I build systems with a strong emphasis on data integrity, security, and automated CI/CD workflows.
 
-This repository contains the codebase for my **personal portfolio**, built with **React**, **Vite**, and **Tailwind CSS**. Below are two featured projects I've built and showcased in this portfolio.
+My experince ranges from designing robust REST APIs and real-time communication with WebSockets to automating the Workflow with GitHub Actions and bundling the application with Docker.
+
+This repository contains the codebase for my personal portfolio, built with React, Vite, and Tailwind CSS.
 
 ---
 
