@@ -69,7 +69,7 @@ A Fullstack Social Media Clone with Session based Authentication focusing on CRU
 
 ---
 
-### E-Commerce-App
+### shoppi
 
 A E-Commerce-App featuring JWT Auth, OAuth, Admin Dashboard and CRUD features for Products and Orders as well as checkout flow through Stripe for authenticated Users.
 

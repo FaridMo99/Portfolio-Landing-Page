@@ -14,8 +14,8 @@ export type Projects = {
 
 const projects: Projects[] = [
   {
-    title: "E-Commerce-App | Fullstack E-Commerce-App",
-    text: `E-Commerce-App is a Fullstack Application using NextJs on the Frontend and Express on the Backend. 
+    title: "shoppi | Fullstack E-Commerce-App",
+    text: `shoppi is a Fullstack Application using NextJs on the Frontend and Express on the Backend. 
     For end-to-end shared behavior it uses a Monorepo Architecture through npm workspaces.
     The App uses JWT-Tokens as well as OAuth for authentication.
     Public Form Inputs are bot protected through rate-limiting and Cloudflare Turnstile.
@@ -52,11 +52,11 @@ const projects: Projects[] = [
       "Github Actions",
       "Mailjet",
     ],
-    link: "https://frontend-e-commerce-app.onrender.com",
+    link: "https://www.shoppi.lat",
     secondImage: "/eCommerceAppFullImage.png",
     alt: "e commerce app logo",
   },
-  
+
   {
     title: "friendly. | Social Media Single-Page-Application",
     text: `friendly. is a Fullstack Social Media Application that provides full CRUD (Create, Read, Update, Delete)
