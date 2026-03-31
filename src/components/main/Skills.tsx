@@ -10,13 +10,16 @@ function Skills() {
           width="md:w-[20vw] w-full"
           title="Frontend"
           skills={[
-            "React / Next.js",
+            "React",
+            "Next.js",
             "TypeScript",
+            "TailwindCSS",
+            "ShadCN",
             "Tanstack Query",
             "Zustand",
-            "TailwindCSS / ShadCN",
             "Framer Motion",
-            "Zod / React-Hook-Form",
+            "Zod",
+            "React-Hook-Form",
           ]}
           icons={[ChevronLeft, ChevronRight]}
         />
@@ -25,13 +28,17 @@ function Skills() {
           title="Backend"
           skills={[
             "Go",
-            "Node.js / Express",
-            "JWT & OAuth 2.0",
-            "Socket.io (Real-time)",
-            "Stripe Integration",
-            "Passport.js",
-            "Redis (Caching)",
-            "Cloudinary / Mailjet",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "SQL",
+            "PrismaORM",
+            "Redis",
+            "Rest APIs",
+            "JWT & OAuth",
+            "Websockets(Socket.io)",
+            "Testing",
+            "Monorepo Architecture"
           ]}
           icons={[ChevronLeft, ChevronRight]}
         />
@@ -47,11 +54,9 @@ function Skills() {
           skills={[
             "Docker",
             "GitHub Actions (CI/CD)",
-            "Monorepo (Workspaces)",
-            "Vitest / Supertest",
-            "Git / GitHub",
+            "Git",
             "AWS",
-            "Terraform"
+            "Terraform",
           ]}
           icons={[ChevronLeft, ChevronRight]}
         />

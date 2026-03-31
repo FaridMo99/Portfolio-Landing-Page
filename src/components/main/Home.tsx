@@ -25,7 +25,7 @@ function Home() {
         animate={{ x: 0, opacity: 1 }}
         className="text-white/60 text-5xl pt-2 pb-4"
       >
-        I am a Fullstack Developer.
+        I am a Fullstack Cloud Developer.
       </motion.h3>
       <motion.p
         initial={{ x: "100vw", opacity: 0 }}
@@ -33,10 +33,14 @@ function Home() {
         animate={{ x: 0, opacity: 1 }}
         className="text-white/40 text-xl"
       >
-        I'm a self taught Fullstack Developer using React and NextJs on the frontend for Accessible and Responsive Web Apps.<br/>
-        On the Backend i am using NodeJs and Express as Framework to create secure RESTful APIs <br />
-        as well as PostgreSQL as the Database Layer to store Data reliably.
-        Currently im learning technologies like AWS and Terraform and trying to get the appropriate Certificates to widen my Cloud and DevOps knowledge.
+        I’m a self-taught developer who enjoys building with
+        <span className="text-white/80"> Go, TypeScript, and React</span>. While
+        I enjoy writing code the most, I’ve always been interested about what happens after
+        the application is finished and how it scales and runs highly available in production.
+        <br />
+        That interest led me to learn<span className="text-white/80">AWS and Terraform</span>.
+        I’ve got a few certifications and together with Docker and Github Actions i make sure the Applications
+        can run reliable, highly available and automated in the real world.
       </motion.p>
     </section>
   );
