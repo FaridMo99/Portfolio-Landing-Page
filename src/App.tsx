@@ -7,6 +7,7 @@ import Projects from "./components/main/Projects";
 import Footer from "./components/footer/Footer";
 import Background from "./components/Background";
 import type { JSX } from "react";
+import Certificates from "./components/main/Certificates";
 
 function App():JSX.Element {
   return (
@@ -15,6 +16,7 @@ function App():JSX.Element {
       <Main>
         <Home />
         <About />
+        <Certificates />
         <Skills />
         <Projects />
       </Main>

@@ -24,6 +24,7 @@ function Skills() {
           width="md:w-[20vw] w-full my-12 md:my-0"
           title="Backend"
           skills={[
+            "Go",
             "Node.js / Express",
             "JWT & OAuth 2.0",
             "Socket.io (Real-time)",
@@ -37,11 +38,7 @@ function Skills() {
         <SkillCard
           width="md:w-[20vw] w-full mb-12"
           title="Database"
-          skills={[
-            "PostgreSQL",
-            "Prisma ORM",
-            "SQL",
-          ]}
+          skills={["PostgreSQL", "Prisma ORM", "SQL"]}
           icons={[ChevronLeft, ChevronRight]}
         />
         <SkillCard
@@ -53,6 +50,8 @@ function Skills() {
             "Monorepo (Workspaces)",
             "Vitest / Supertest",
             "Git / GitHub",
+            "AWS",
+            "Terraform"
           ]}
           icons={[ChevronLeft, ChevronRight]}
         />

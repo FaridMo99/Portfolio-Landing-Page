@@ -14,9 +14,10 @@ function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [scroll, setScroll] = useState<boolean>(false);
 
-  const links:Link[] = [
+  const links: Link[] = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Certifications", href: "#certs" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
   ];

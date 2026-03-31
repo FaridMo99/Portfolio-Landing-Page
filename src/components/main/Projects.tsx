@@ -12,6 +12,12 @@ export type Projects = {
   technologies: string[];
 };
 
+const wiseLogoPaths: string[] = [
+  "/wiseLogoGradient.png",
+  "/wiseLogoPlain.png",
+  "/wiseLogoCircle.png",
+];
+
 const projects: Projects[] = [
   {
     title: "shoppi | Fullstack E-Commerce-App",
@@ -103,6 +109,16 @@ const projects: Projects[] = [
     link: "https://nextjs-sportsapp-kukg6b0ko-famohs-projects.vercel.app",
     secondImage: "/hooptrackerSecond.png",
     alt: "Hooptracker logo",
+  },
+  {
+    title: "wise | Git Clone",
+    text: `wise is a local Version Control System(VCS) written in Go(Golang) utilizing the Cobra library.`,
+    image: wiseLogoPaths[2],
+    githubLink: "https://github.com/FaridMo99/wise",
+    technologies: ["Go", "Cobra"],
+    link: "https://github.com/FaridMo99/wise",
+    secondImage: "/WiseGhPreview.png",
+    alt: "wise logo",
   },
 ];
 
