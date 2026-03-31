@@ -38,7 +38,7 @@ function Home() {
         I enjoy writing code the most, I’ve always been interested about what happens after
         the application is finished and how it scales and runs highly available in production.
         <br />
-        That interest led me to learn<span className="text-white/80">AWS and Terraform</span>.
+        That interest led me to learn<span className="text-white/80"> AWS and Terraform</span>.
         I’ve got a few certifications and together with Docker and Github Actions i make sure the Applications
         can run reliable, highly available and automated in the real world.
       </motion.p>
