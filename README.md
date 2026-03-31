@@ -115,3 +115,47 @@ A E-Commerce-App featuring JWT Auth, OAuth, Admin Dashboard and CRUD features fo
 - Automated Testing and Deployment through Github Actions
 
 ---
+
+### Wise (Git Clone)
+
+A Git Clone written in Go and Cobra
+
+**Tech Stack:**
+
+**Go (Golang)**
+**Cobra Framework**
+
+**Highlights:**
+
+**Parallel Hashing:** Implements a **Fan-Out** pattern with semaphores (limited to 100 concurrent operations) to hash large projects without hitting OS file descriptor limits.
+**Streaming History:** Utilizes a **Producer-Consumer** model for repository logging, allowing the CLI to stream and print commit records immediately via channels.
+**Hybrid Concurrency:** Employs performance thresholds to switch between simple loops and concurrent workers based on repository size, ensuring zero overhead for small projects while maintaining speed for large ones.
+**Thread-Safe Caching:** Features `sync.Map` for caching `CommitRecord` objects during deep history traversals to drastically reduce redundant disk I/O.
+**Content-Addressable Storage:** Efficiently deduplicates data by only writing to the `objects` directory when file content has actually changed.
+**Robust Branch Management:** Safely handles creating, switching, and deleting branches, including prompts to protect uncommitted local changes.
+**GoDoc Compliant:** The entire `utils` package follows standard Go documentation conventions for maximum maintainability and navigation.
+
+---
+
+## Commands
+
+| Command | Action | Description |
+| :--- | :--- | :--- |
+| `init` | **Initialize** | Creates `.wise` directory, object storage, and sets up the `main` branch. |
+| `commit` | **Snapshot** | Captures the current directory state using parallel hashing and parent pointers. |
+| `log` | **History** | `-a` for full history streaming; `-c` to check for uncommitted changes. |
+| `branch` | **Manage** | Lists, creates (`-c`), switches (`-s`), or deletes (`-d`) local branches. |
+| `restore` | **Revert** | Restores the working directory to the exact state of a specific commit hash. |
+
+---
+
+## Project Structure
+
+```text
+.wise/
+├── HEAD                # Pointer to the active branch
+├── objects/            # Database of blobs and commit records
+└── refs/
+    └── heads/
+        └── [branch]    # Files containing the active commit hash
+.wiseignore

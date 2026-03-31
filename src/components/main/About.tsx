@@ -5,8 +5,8 @@ function About() {
   return (
     <>
       <Subsections title="About Me" id="about">
-        <div className="flex justify-center items-center w-full h-full mb-8">
-          <TransitionWrapper styles="frost rounded-2xl md:w-1/2 p-12">
+        <div className="w-full h-full mb-8">
+          <TransitionWrapper styles="frost p-12">
             <p>
               Hi, I'm <strong>Farid Mohseni</strong>, a self-taught Full-stack
               Developer passionate about building clean, performant, and

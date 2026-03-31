@@ -1,6 +1,6 @@
-import CardButton from "./CardButton";
 import TransitionWrapper from "./HoC/TransitionWrapper";
 import type { LucideIcon } from "lucide-react";
+import SkillButtonsContainer from "./SkillButtonsContainer";
 
 type SkillCardProps = {
   title: string;
@@ -12,19 +12,15 @@ type SkillCardProps = {
 function SkillCard({ title, icons, width, skills }:SkillCardProps) {
   return (
     <TransitionWrapper
-      styles={`frost ${width} rounded-2xl px-4  h-70`}
+      styles={`frost ${width} rounded-2xl px-4 h-50 flex flex-col`}
     >
-      <h2 className="font-bold pt-2">
+      <h2 className="font-bold py-2">
         {icons?.map((Icon,index) => (
           <Icon key={index} className="inline text-secondary" />
         ))}
         {title}
       </h2>
-      <div className="w-full py-4 flex flex-wrap">
-        {skills?.map((skill) => (
-          <CardButton key={skill} text={skill} />
-        ))}
-      </div>
+        <SkillButtonsContainer skills={skills} height="full"/>
     </TransitionWrapper>
   );
 }

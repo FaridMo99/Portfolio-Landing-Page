@@ -76,7 +76,7 @@ function Header() {
         opacity: { duration: 1 },
         y: { duration: 1 },
       }}
-      className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed font-bold flex justify-between items-center ${scroll ? "frost" : ""} z-30`}
+      className={`w-[98vw] top-[2vh] left-[1vw] rounded-2xl fixed font-bold flex justify-between items-center ${scroll ? "bg-black border border-neutral-400" : ""} z-30`}
       onClick={clickHandler}
     >
       <img src="/LandingPage-Logo.png" className="h-24 w-auto object-contain" />

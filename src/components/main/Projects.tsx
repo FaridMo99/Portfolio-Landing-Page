@@ -125,7 +125,7 @@ const projects: Projects[] = [
 function Projects() {
   return (
     <Subsections title="Projects" id="projects">
-      <div className="flex md:flex-row flex-col justify-around md:justify-around items-center w-full h-full">
+      <div className="flex md:flex-row gap-4 flex-col justify-around md:justify-around items-center w-full h-full">
         {projects.map((project) => (
           <ProjectsCard
             title={project.title}
