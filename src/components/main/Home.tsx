@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <section id="home" className="w-full text-white h-[88vh] flex flex-col">
+    <section id="home" className="w-full text-white min-h-screen md:mb-0 md-4 flex flex-col">
       <motion.h2
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1, delay: 1 }}

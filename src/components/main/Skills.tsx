@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 function Skills() {
   return (
     <Subsections id="skills" title="Skills & Technologies">
-      <div className="flex md:flex-row md:items-start flex-col justify-around md:justify-between items-center w-full h-full">
+      <div className="flex mb-4 md:flex-row md:items-start flex-col justify-around md:justify-between items-center w-full h-full">
         <SkillCard
           width="md:w-[20vw] w-full"
           title="Frontend"
