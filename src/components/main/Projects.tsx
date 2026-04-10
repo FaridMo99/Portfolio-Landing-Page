@@ -21,14 +21,15 @@ const wiseLogoPaths: string[] = [
 const projects: Projects[] = [
   {
     title: "shoppi | Fullstack E-Commerce-App",
-    text: `shoppi is a Fullstack Application using NextJs on the Frontend and Express on the Backend. 
+    text: `shoppi is a Fullstack Application using NextJs on the Frontend and Express on the Backend.
+    The Infrastructure is provisioned through Terraform on AWS using ECR, S3, ECS(EC2), RDS, ElastiCache and SSM Parameter Store.
     For end-to-end shared behavior it uses a Monorepo Architecture through npm workspaces.
     The App uses JWT-Tokens as well as OAuth for authentication.
     Public Form Inputs are bot protected through rate-limiting and Cloudflare Turnstile.
     Authenticated User can add Products to the shopping cart, review, bookmark, sort, filter,search these and create orders which
     get verified through stripe and stripe webhooks.
     Admins have Access to a custom Admin Dashboard with analytics, check user orders and create/delete/update Products with Images
-    that get uploaded to the Cloud(Cloudinary).
+    that get uploaded to the Cloud(AWS S3).
     Multiple Currencies are supported through Maxmind IP Mapping to a Geolocation.
     Cronjobs invalidate Caches and cleanup the Database regularly.
     Docker is being used to Bundle the Application to allow it to run everywhere without problems.
@@ -36,6 +37,8 @@ const projects: Projects[] = [
     image: "/eCommerceAppLogo.png",
     githubLink: "https://github.com/FaridMo99/E-Commerce-App",
     technologies: [
+      "Terraform",
+      "AWS",
       "Stripe",
       "Docker",
       "Redis",
@@ -51,7 +54,6 @@ const projects: Projects[] = [
       "Github Actions",
       "Vitest",
       "Cronjob",
-      "Cloudinary",
       "Multer",
       "OAuth",
       "JWT",

@@ -10,6 +10,57 @@ This repository contains the codebase for my personal portfolio, built with Reac
 
 ## Featured Projects
 
+### shoppi
+
+A E-Commerce-App featuring JWT Auth, OAuth, Admin Dashboard and CRUD features for Products and Orders as well as checkout flow through Stripe for authenticated Users. Infrastructure provisioned through Terraform on AWS.
+
+![App Architecture](AwsDiagram.png)
+
+**Tech Stack:**
+
+- Terraform
+- AWS
+- TypeScript
+- React
+- NextJs
+- TailwindCSS
+- NodeJs
+- Express
+- PostgreSQL
+- PrismaORM
+- Redis
+- Stripe
+- Docker
+- npm workspaces
+- Github Actions
+- Vitest
+- Cronjob
+- Multer
+- OAuth
+- JWT
+- Mailjet
+
+**Highlights:**
+
+- Monorepo Architecture
+- Docker Implementation
+- JWT and OAuth
+- Admin CRUD and Dashboard
+- Rate Limiting and Cloudflare Turnstile
+- Multi Currency Support through Maxmind IP Mapping
+- Cronjobs
+- EMail Verification
+- Cloud Hosting
+- Terraform Porvisioning
+- Multi Device Support
+- Stripe Integration
+- Protected Routes thorugh Authenticationa and Authorization Status
+- Data Integrity through Transactions on the Database level
+- Better SEO through NextJs Frontend
+- Automated Testing and Deployment through Github Actions
+
+---
+
 ### HoopTracker
 
 A basketball-focused web app designed for tracking players and matches.
@@ -66,53 +117,6 @@ A Fullstack Social Media Clone with Session based Authentication focusing on CRU
 - File Upload and Cloud Storage
 - GIF Support
 - Real-Time Chat
-
----
-
-### shoppi
-
-A E-Commerce-App featuring JWT Auth, OAuth, Admin Dashboard and CRUD features for Products and Orders as well as checkout flow through Stripe for authenticated Users.
-
-**Tech Stack:**
-
-- TypeScript
-- React
-- NextJs
-- TailwindCSS
-- NodeJs
-- Express
-- PostgreSQL
-- PrismaORM
-- Redis
-- Stripe
-- Docker
-- npm workspaces
-- Github Actions
-- Vitest
-- Cronjob
-- Cloudinary
-- Multer
-- OAuth
-- JWT
-- Mailjet
-
-**Highlights:**
-
-- Monorepo Architecture
-- Docker Implementation
-- JWT and OAuth
-- Admin CRUD and Dashboard
-- Rate Limiting and Cloudflare Turnstile
-- Multi Currency Support through Maxmind IP Mapping
-- Cronjobs
-- EMail Verification
-- Cloud Upload
-- Multi Device Support
-- Stripe Integration
-- Protected Routes thorugh Authenticationa and Authorization Status
-- Data Integrity through Transactions on the Database level
-- Better SEO through NextJs Frontend
-- Automated Testing and Deployment through Github Actions
 
 ---
 
