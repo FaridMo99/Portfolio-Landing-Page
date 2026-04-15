@@ -14,7 +14,7 @@ This repository contains the codebase for my personal portfolio, built with Reac
 
 A E-Commerce-App featuring JWT Auth, OAuth, Admin Dashboard and CRUD features for Products and Orders as well as checkout flow through Stripe for authenticated Users. Infrastructure provisioned through Terraform on AWS.
 
-![App Architecture](AwsDiagram.png)
+![App Architecture](AwsDiagram.svg)
 
 **Tech Stack:**
 
