@@ -60,7 +60,7 @@ const projects: Projects[] = [
       "Github Actions",
       "Mailjet",
     ],
-    link: "https://www.shoppi.lat",
+    link: "https://shoppi.lat",
     secondImage: "/eCommerceAppFullImage.png",
     alt: "e commerce app logo",
   },
