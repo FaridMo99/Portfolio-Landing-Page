@@ -57,6 +57,7 @@ function Skills() {
             "Git",
             "AWS",
             "Terraform",
+            "Kubernetes"
           ]}
           icons={[ChevronLeft, ChevronRight]}
         />
