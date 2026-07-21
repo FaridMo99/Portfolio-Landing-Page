@@ -163,6 +163,7 @@ A Git Clone written in Go and Cobra
     └── heads/
         └── [branch]    # Files containing the active commit hash
 .wiseignore
+```
 
 ---
 
