@@ -163,3 +163,42 @@ A Git Clone written in Go and Cobra
     └── heads/
         └── [branch]    # Files containing the active commit hash
 .wiseignore
+
+---
+
+### TextGrab
+
+A Image Processing Fullstack Application in a Microservice Architecture using a React Frontend, a NodeJs API to accept the Images, validate them and send to a Go API to concurrently extract the Images text content with a OCR-Engine (Tesseract).
+The Infrastructure is on AWS, prosivisioned through Terraform (IaC) and uses Kubernetes (AWS EKS).
+
+![App Architecture](AWSInfraTextGrab.svg)
+
+**Tech Stack:**
+
+- Terraform
+- AWS
+- Kubernetes
+- TypeScript
+- React
+- Vite
+- Go
+- Gin
+- Tesseract (OCR-Engine)
+- TailwindCSS
+- NodeJs
+- Express
+- Docker
+- Github Actions
+- Multer
+- JWT
+- Github Actions
+
+**Highlights:**
+
+- Microservice Architecture through Kubernetes (AWS EKS)
+- Hosted on AWS
+- Provisioned through Terraform (IaC)
+- NodeJS API (Express)
+- Go API (Gin)
+- React Frontend
+- CI/CD (Github Actions)

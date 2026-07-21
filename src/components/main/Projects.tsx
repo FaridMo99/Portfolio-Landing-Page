@@ -130,6 +130,32 @@ const projects: Projects[] = [
     secondImage: "/WiseGhPreview.png",
     alt: "wise logo",
   },
+  {
+    title: "TextGrab | OCR Text Extractor",
+    text: `TextGrab is a Fullstack Application in a Microservice Architecture using Kubernetes (AWS EKS).
+    It consists from a React Frontend to input your images, a NodeJs API to receive the images, validate them
+    and send to the Go API which uses Goroutines to extract the images text content with a OCR Engine (Tesseract)
+    concurrently.
+    The User then receives the Images text content as output.`,
+    image: "/textGrabImage.png",
+    githubLink: "https://github.com/FaridMo99/ocr",
+    technologies: [
+      "Go",
+      "Gin",
+      "NodeJs",
+      "Express",
+      "React",
+      "Tailwind",
+      "Terraform",
+      "Docker",
+      "AWS",
+      "Kubernetes",
+      "Tesseract",
+    ],
+    link: "https://github.com/FaridMo99/ocr",
+    secondImage: "/textGrabImage.png",
+    alt: "TextGrab logo",
+  },
 ];
 
 function Projects() {

@@ -44,7 +44,7 @@ function ProjectsCard({
         </div>
         <h2 className="text-white p-2 h-14 font-bold">{title}</h2>
         <p className="px-3 mb-4 overflow-x-hidden overflow-y-scroll h-1/3 pt-2">{text}</p>
-        <SkillButtonsContainer skills={technologies} height="1/4 pb-6"/>
+        <SkillButtonsContainer skills={technologies} height="1/4"/>
         <a
           className="absolute bottom-1 right-1"
           target="_blank"
